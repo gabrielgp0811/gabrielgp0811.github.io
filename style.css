@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111827;
+    color: #f3f4f6;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 10px;
+}
+
+.section {
+    padding: 80px 0;
+}
