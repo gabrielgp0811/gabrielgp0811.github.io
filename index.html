@@ -8,70 +8,159 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">Gabriel Pereira</div>
+            
+            <!-- TOGGLE BUTTON FOR MOBILE -->
+            <button
+                class="menu-toggle"
+                onclick="toggleMenu()"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="#about" data-i18n="about.title">About</a>
+                </li>
+                <li>
+                    <a href="#skills" data-i18n="skills.title">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" data-i18n="projects.title">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" data-i18n="contact.title">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <header class="hero">
-        <div class="container">
-            <h1>Gabriel Pereira</h1>
-            <p>Unity Developer & Asset Publisher</p>
-            <p>
-                Ferramentas, sistemas e soluções para desenvolvimento de jogos.
-            </p>
+        <!-- LANGUAGE BUTTONS -->
+        <div class="language-switch">
+            <button onclick="setLanguage('en-US')">🇺🇸 EN</button>
+            <button onclick="setLanguage('pt-BR')">🇧🇷 PT</button>
+        </div>
+
+        <div class="container hero-content">
+            <div class="profile-image-container">
+                <img
+                    src="assets/images/profile.jpg"
+                    alt="Gabriel Pereira"
+                    class="profile-image"
+                />
+            </div>
+
+            <div class="hero-text">
+                <!-- <h1 data-i18n="hero.title">Gabriel Guimarães Pereira</h1> -->
+                <p data-i18n="hero.title">Gabriel Guimarães Pereira</p>
+                <p data-i18n="hero.subtitle">Unity Developer and Publisher</p>
+                <p data-i18n="hero.description">Tools, systems, and solutions for game development.</p>
+            </div>
         </div>
     </header>
 
-    <section class="section">
+    <section id="about" class="section">
         <div class="container">
-            <h2>Sobre</h2>
-            <p>
-                Desenvolvedor focado em Unity, criação de ferramentas reutilizáveis,
-                sistemas de diálogo, arquitetura de jogos e soluções para acelerar
-                o desenvolvimento.
+            <h2 data-i18n="about.title">About</h2>
+            <p data-i18n="about.description">
+                Developer focused on Unity, creating reusable tools, dialogue systems, game architecture, and solutions to speed up development.
             </p>
         </div>
     </section>
 
-    <section class="section alt">
+    <section id="skills" class="section alt">
         <div class="container">
-            <h2>Skills</h2>
+            <h2 data-i18n="skills.title">Skills</h2>
 
             <div class="skills-grid">
                 <div class="skill-card">Unity</div>
                 <div class="skill-card">C#</div>
-                <div class="skill-card">Editor Tools</div>
-                <div class="skill-card">UI Toolkit</div>
-                <div class="skill-card">Game Architecture</div>
+                <div class="skill-card" data-i18n="skills.editorTools">Editor Tools</div>
+                <div class="skill-card" data-i18n="skills.uiToolkit">UI Toolkit</div>
+                <div class="skill-card" data-i18n="skills.gameArchitecture">Game Architecture</div>
                 <div class="skill-card">Git & GitHub</div>
             </div>
         </div>
     </section>
 
-    <section class="section">
+    <section id="projects" class="section">
         <div class="container">
-            <h2>Projetos</h2>
+            <h2 data-i18n="projects.title">Projects</h2>
 
             <div class="project-card">
-                <h3>EZ Ads</h3>
-                <p>
-                    Sistema simplificado para integração de anúncios na Unity.
+                <h3 data-i18n="projects.ezAds.title">EZ Ads</h3>
+                <p data-i18n="projects.ezAds.description">
+                    Simplified system for ad integration in Unity.
                 </p>
             </div>
 
             <div class="project-card">
-                <h3>Dialogue Tools</h3>
-                <p>
-                    Ferramentas para criação e gerenciamento de diálogos.
+                <h3 data-i18n="projects.dialogueTools.title">Dialogue Tools</h3>
+                <p data-i18n="projects.dialogueTools.description">
+                    Tools for creating and managing dialogues.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section alt">
+    <section id="contact" class="section alt">
         <div class="container">
-            <h2>Contato</h2>
+            <h2 data-i18n="contact.title">Contact</h2>
 
-            <p>Email: contato@seudominio.com</p>
-            <p>GitHub: github.com/seuusuario</p>
-            <p>LinkedIn: linkedin.com/in/seuperfil</p>
+            <div class="contact-grid">
+
+            <a
+                class="contact-card"
+                href="mailto:gabrielgp0811@gmail.com"
+            >
+                <span>📧</span>
+                <div>
+                    <h3>E-mail</h3>
+                    <p>gabrielgp0811@gmail.com</p>
+                </div>
+            </a>
+
+            <a
+                class="contact-card"
+                href="https://github.com/gabrielgp0811"
+                target="_blank"
+            >
+                <span>💻</span>
+                <div>
+                    <h3>GitHub</h3>
+                    <p>github.com/gabrielgp0811</p>
+                </div>
+            </a>
+
+            <a
+                class="contact-card"
+                href="https://discordapp.com/users/454070648797659138"
+                target="_blank"
+            >
+                <span>🎮</span>
+                <div>
+                    <h3>Discord</h3>
+                    <p>@gabrielgp0811</p>
+                </div>
+            </a>
+
+            <a
+                class="contact-card"
+                href="https://www.linkedin.com/in/gabriel-pereira-9b91242b/"
+                target="_blank"
+            >
+                <span>💼</span>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>Gabriel Pereira</p>
+                </div>
+            </a>
+
+        </div>
         </div>
     </section>
 
@@ -79,5 +168,15 @@
         <p>© 2026 Gabriel Pereira</p>
     </footer>
 
+    <button
+        id="scrollTopBtn"
+        class="scroll-top-btn"
+        onclick="scrollToTop()"
+    >
+        <!-- ↑ -->
+        🔝
+    </button>
+
 </body>
+<script src="script.js"></script>
 </html>
