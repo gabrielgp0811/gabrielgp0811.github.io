@@ -1,0 +1,35 @@
+{
+    "hero": {
+        "title": "Gabriel Guimarães Pereira",
+        "subtitle": "Unity Developer and Publisher",
+        "description": "Tools, systems, and solutions for game development."
+    },
+
+    "about": {
+        "title": "About",
+        "description": "Developer focused on Unity, creating reusable tools, dialogue systems, game architecture, and solutions to speed up development."
+    },
+
+    "skills": {
+        "title": "Skills",
+        "editorTools": "Editor Tools",
+        "uiToolkit": "UI Toolkit",
+        "gameArchitecture": "Game Architecture"
+    },
+
+    "projects": {
+        "title": "Projects",
+        "ezAds": {
+            "title": "EZ Ads",
+            "description": "Simplified system for ad integration in Unity."
+        },
+        "dialogueTools": {
+            "title": "Dialogue Tools",
+            "description": "Tools for creating and managing dialogues."
+        }
+    },
+
+    "contact": {
+        "title": "Contact"
+    }
+}
