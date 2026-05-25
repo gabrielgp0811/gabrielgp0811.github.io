@@ -36,7 +36,7 @@ async function setLanguage(lang) {
     if (!translations) return;
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
-
+        
         const key = element.getAttribute('data-i18n');
 
         if (!key) return;
@@ -49,8 +49,12 @@ async function setLanguage(lang) {
                 val = valPart;
         }
 
-        if (val)
-            element.textContent = val;
+        if (val) {
+            if (element.nodeName === 'META')
+                element.setAttribute('content', val);
+            else
+                element.textContent = val;
+        }
     });
 
     localStorage.setItem('language', lang);
