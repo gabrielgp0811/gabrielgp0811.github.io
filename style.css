@@ -40,10 +40,46 @@ body {
 
 .logo {
 
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
     font-size: 1.2rem;
+
     font-weight: bold;
 
     color: #f3f4f6;
+}
+
+/* IMAGEM */
+
+.logo-image {
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* HOVER */
+
+.logo:hover .logo-image {
+
+    transform: rotate(-5deg) scale(1.05);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 .nav-links {
